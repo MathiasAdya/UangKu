@@ -15,5 +15,5 @@ class LoginViewModel : ViewModel() {
         return dummyUser.login(email, password)
     }
 
-    private fun hash(pass: String) = pass.reversed() // mock hash
+    private fun hash(pass: String) = pass.reversed()
 }
