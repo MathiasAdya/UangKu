@@ -10,6 +10,7 @@ class LaporanBulanan(
 ) : Laporan("Bulanan", tanggalMulai, tanggalAkhir, dataTransaksi, dataGrafik, dataStatistik) {
 
     override fun visualisasikan() {
+        val bulan = 12
         println("--- Laporan Bulanan untuk $bulan ---")
         println("Statistik: $dataStatistik")
         println("Grafik: Menampilkan persentase pengeluaran per kategori.")

@@ -73,9 +73,10 @@ class CloudStorage {
         println("Data pengguna berhasil diambil.")
         // Mengembalikan contoh Pengguna
         return Pengguna(
-            id = userID,
+            userID = userID,
             nama = "Contoh Pengguna",
-            email = "user@example.com"
+            email = "user@example.com",
+            passwordHash = "contoh-hash"
         )
     }
 }
