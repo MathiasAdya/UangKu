@@ -1,6 +1,6 @@
 package com.example.uangku.model
 
-data class Transaksi(
+open class Transaksi(
     val id: String,
     val deskripsi: String,
     val jumlah: Double,

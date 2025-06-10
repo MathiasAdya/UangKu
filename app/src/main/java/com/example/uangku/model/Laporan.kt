@@ -1,6 +1,7 @@
 package com.example.uangku.model
 
-data class Laporan(
+// Menjadikan kelas Laporan 'open' agar bisa di-inherit
+open class Laporan(
     val tipeLaporan: String,
     val tanggalMulai: String,
     val tanggalAkhir: String,
@@ -28,7 +29,9 @@ data class Laporan(
         }
     }
 
-    fun visualisasikan() {
-        // misalnya, return grafik dalam bentuk JSON atau object siap render
+    // Menjadikan fungsi 'open' agar bisa di-override oleh subclass
+    open fun visualisasikan() {
+        println("Visualisasi standar untuk laporan: $tipeLaporan")
+        // Logika visualisasi dasar
     }
 }
